@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="820.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sold.hotel.controllers.main_controllers.StaffWindowController">
+    <children>
+        <Label alignment="CENTER" layoutX="-1.0" layoutY="20.0" prefHeight="40.0" prefWidth="175.0" text="Staff panel" textFill="WHITE">
+            <font>
+                <Font name="Roboto Medium" size="25.0" />
+            </font>
+        </Label>
+        <GridPane layoutX="174.0" layoutY="129.0" prefHeight="254.0" prefWidth="218.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="266.4000274658203" minWidth="10.0" prefWidth="231.9999755859375" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="80.0" minHeight="0.0" percentHeight="0.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="80.0" minHeight="0.0" percentHeight="0.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="83.19998168945312" minHeight="0.0" percentHeight="0.0" prefHeight="83.19998168945312" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="80.0" minHeight="0.0" percentHeight="0.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="80.0" minHeight="0.0" percentHeight="0.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="80.0" minHeight="10.0" percentHeight="0.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button mnemonicParsing="false" onAction="#showRooms" prefHeight="34.0" prefWidth="218.0" text="View rooms" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Roboto Medium" size="13.0" />
+               </font></Button>
+                <Button mnemonicParsing="false" onAction="#showAdditionalServices" prefHeight="34.0" prefWidth="218.0" text="View additional services" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Roboto Medium" size="13.0" />
+               </font></Button>
+                <Button mnemonicParsing="false" onAction="#showAllBookings" prefHeight="34.0" prefWidth="218.0" text="View all booking" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Roboto Medium" size="13.0" />
+               </font></Button>
+              <Label alignment="CENTER" prefHeight="18.0" prefWidth="223.0" text="Commands to view" textFill="WHITE" GridPane.rowIndex="1">
+                  <font>
+                      <Font name="Roboto Medium" size="20.0" />
+                  </font>
+              </Label>
+            </children>
+        </GridPane>
+        <GridPane layoutX="451.0" layoutY="129.0" prefHeight="269.0" prefWidth="218.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="80.0" minHeight="0.0" percentHeight="0.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="80.0" minHeight="0.0" percentHeight="0.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="80.0" minHeight="0.0" percentHeight="0.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="80.0" minHeight="10.0" percentHeight="0.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label alignment="CENTER" prefHeight="18.0" prefWidth="223.0" text="Commands to edit" textFill="WHITE">
+                    <font>
+                        <Font name="Roboto Medium" size="20.0" />
+                    </font>
+                </Label>
+                <Button mnemonicParsing="false" onAction="#editAdditionalService" prefHeight="34.0" prefWidth="218.0" text="Edit additional services" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Roboto Medium" size="13.0" />
+               </font></Button>
+                <Button mnemonicParsing="false" onAction="#editRoom" prefHeight="34.0" prefWidth="218.0" text="Edit rooms" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Roboto Medium" size="13.0" />
+               </font></Button>
+            </children>
+        </GridPane>
+        <FlowPane layoutX="416.0" layoutY="498.0" prefHeight="32.0" prefWidth="390.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#editData" prefHeight="30.0" prefWidth="134.0" text="Edit your data" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Medium" size="13.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets right="10.0" />
+               </FlowPane.margin>
+                </Button>
+                <Button maxHeight="30.0" maxWidth="134.0" minHeight="30.0" minWidth="100.0" mnemonicParsing="false" onAction="#changePasswordAction" prefHeight="30.0" prefWidth="134.0" text="Change Password">
+                    <FlowPane.margin>
+                        <Insets right="10.0" />
+                    </FlowPane.margin>
+               <font>
+                  <Font name="Roboto Medium" size="13.0" />
+               </font>
+                </Button>
+                <Button maxHeight="30.0" maxWidth="100.0" minHeight="30.0" minWidth="100.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="30.0" prefWidth="100.0" text="Logout">
+               <font>
+                  <Font name="Roboto Medium" size="13.0" />
+               </font></Button>
+            </children>
+        </FlowPane>
+        <Line endX="719.0" endY="-7.62939453125E-6" layoutX="101.0" layoutY="72.0" startX="-101.0" />
+        <Line endX="719.0" endY="-7.62939453125E-6" layoutX="101.0" layoutY="490.0" startX="-101.0" />
+      <Button layoutX="725.0" layoutY="12.0" mnemonicParsing="false" onAction="#showPersonalData" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font name="Roboto Medium" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="725.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/profile.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>
