@@ -86,17 +86,17 @@ All the features of the listed roles are described below
 
 Some screenshots from the app
 
-![Main screen](https://github.com/sold666/hotel/assets/61206345/9a6c065e-94dd-485c-9ca0-5e568e4ab3bf)
+![Main screen](https://github.com/sold666/hotel/assets/61206345/fdc89255-db2d-40b2-bd82-908d07d5b83f)
 
-![Admin panel](https://github.com/sold666/hotel/assets/61206345/f8ed08c2-3850-4dcd-b575-4b82df03fb60)
+![Admin panel](https://github.com/sold666/hotel/assets/61206345/1288159f-69c8-4828-9418-daa26c54f1bf)
 
-![Staff panel](https://github.com/sold666/hotel/assets/61206345/1520a305-af0d-4f83-a6af-099ae5ecf03b)
+![Staff panel](https://github.com/sold666/hotel/assets/61206345/f411eb71-e08e-4ea1-af91-320fc1f2fee9)
 
-![Client panel](https://github.com/sold666/hotel/assets/61206345/b8125650-1d3f-4239-91bd-003d9a6060f1)
+![Client panel](https://github.com/sold666/hotel/assets/61206345/08e69e9d-4075-4f52-8d41-5a4bd8dfd10b)
 
-![Client registration](https://github.com/sold666/hotel/assets/61206345/988354d3-fada-41e4-ab6a-022fc5ad7107)
+![Client registration](https://github.com/sold666/hotel/assets/61206345/d4064f94-719c-48f0-8747-a19a2e0caa86)
 
-![Profile](https://github.com/sold666/hotel/assets/61206345/be1a1499-e0a8-476f-b977-a56d8cdeff20)
+![Profile](https://github.com/sold666/hotel/assets/61206345/0eb645c6-09ce-4905-91ff-4eee4a3b09e1)
 
 ### Technologies
 
