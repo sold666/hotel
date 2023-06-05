@@ -1,0 +1,14 @@
+.root {
+    -fx-background-color: linear-gradient(#82A9FF, #ffffff),
+    radial-gradient(center 10% 10%, radius 50%, #FFFFFF33, #00000033);
+}
+
+.button {
+    -fx-background-color: #57B6ED;
+    -fx-background-radius: 15px;
+    -fx-text-fill: #ffffff;
+}
+
+.button:hover {
+    -fx-background-color: #3C86B1;
+}
