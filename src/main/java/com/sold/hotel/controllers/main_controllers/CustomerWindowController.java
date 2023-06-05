@@ -52,9 +52,6 @@ public class CustomerWindowController implements Initializable {
         stage.show();
     }
 
-    //todo другой интерфейс
-    //todo неправильно total считается при добавлении доп услуг (Изменяется у всех записей?? Выдает ошибку если уже была выбрана услуга)
-    //todo локализация
     public void addBooking(ActionEvent event) throws IOException {
         scene = new Scene(FXMLLoader.load(getClass().getResource("/main/add/add_booking.fxml")));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
