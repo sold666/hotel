@@ -46,7 +46,7 @@ public class AddBookingController implements Initializable {
                     return;
                 }
                 Date in = Date.valueOf(inDP.getValue());
-                if (Validate.isCorrectDate(in)) {
+                if (Validate.isCorrectDate(in.toLocalDate())) {
                     Utils.alertBox("Date incorrectly", null, "Error");
                     return;
                 }
@@ -56,7 +56,7 @@ public class AddBookingController implements Initializable {
                     return;
                 }
                 Date out = Date.valueOf(outDP.getValue());
-                if (Validate.isDateMoreDate(out, in)) {
+                if (Validate.isDateMoreDate(out.toLocalDate(), in.toLocalDate())) {
                     Utils.alertBox("Date incorrectly", null, "Error");
                     return;
                 }

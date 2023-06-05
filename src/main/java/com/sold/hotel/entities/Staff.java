@@ -35,6 +35,7 @@ public class Staff {
         this.post = post;
         this.isAvailable = isAvailable;
     }
+
     public static int getAge(Date birthday) {
         return Period.between(convert(String.valueOf(birthday)), LocalDate.now()).getYears();
     }

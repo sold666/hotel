@@ -60,7 +60,7 @@ public class EditStaffController implements Initializable {
                     return;
                 }
                 Date date = Date.valueOf(birthdate.getValue());
-                if (!Validate.isCorrectDate(date)) {
+                if (!Validate.isCorrectDate(date.toLocalDate())) {
                     Utils.alertBox("Date incorrectly", null, "Error");
                     return;
                 }

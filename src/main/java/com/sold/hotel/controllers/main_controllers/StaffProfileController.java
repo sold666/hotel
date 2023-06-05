@@ -11,7 +11,9 @@ import org.apache.log4j.Level;
 
 import java.io.IOException;
 import java.net.URL;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ResourceBundle;
 
 public class StaffProfileController implements Initializable {
@@ -53,7 +55,7 @@ public class StaffProfileController implements Initializable {
         ResultSet resultSet;
         try {
             preparedStatement = connection.prepareStatement("SELECT name, surname, patronymic, date_of_birth, phone, post " +
-                                                                "FROM staff WHERE staff.id_user LIKE ?");
+                    "FROM staff WHERE staff.id_user LIKE ?");
             preparedStatement.setInt(1, SignInController.idUserStaff);
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {

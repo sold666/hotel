@@ -55,7 +55,7 @@ public class CustomerProfileController implements Initializable {
         ResultSet resultSet;
         try {
             preparedStatement = connection.prepareStatement("SELECT name, surname, patronymic, date_of_birth, phone, passport " +
-                                                                "FROM customers WHERE customers.id_user LIKE ?");
+                    "FROM customers WHERE customers.id_user LIKE ?");
             preparedStatement.setInt(1, SignInController.idUserCustomer);
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {

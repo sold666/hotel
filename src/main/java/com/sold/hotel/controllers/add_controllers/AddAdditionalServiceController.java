@@ -42,7 +42,7 @@ public class AddAdditionalServiceController implements Initializable {
                 String cost = costTF.getText();
                 if (!Validate.isCost(cost)) {
                     Utils.alertBox("Cost entered incorrectly\n" +
-                                    """
+                            """
                                     Example:\s
                                     100\s
                                     0.99\s

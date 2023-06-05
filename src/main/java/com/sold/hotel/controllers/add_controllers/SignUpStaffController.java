@@ -79,7 +79,7 @@ public class SignUpStaffController implements Initializable {
                     return;
                 }
                 Date date = Date.valueOf(birthdate.getValue());
-                if (!Validate.isCorrectDate(date)) {
+                if (!Validate.isCorrectDate(date.toLocalDate())) {
                     Utils.alertBox("Date incorrectly", null, "Error");
                     return;
                 }
@@ -96,7 +96,7 @@ public class SignUpStaffController implements Initializable {
                 String status = statusTF.getText();
                 if (!Validate.isStatus(status)) {
                     Utils.alertBox("Status entered incorrectly\n" +
-                                    """
+                            """
                                        Enter only 1 or 0:\s
                                        1 - active\s
                                        0 - non active

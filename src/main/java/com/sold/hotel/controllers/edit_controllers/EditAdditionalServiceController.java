@@ -47,11 +47,11 @@ public class EditAdditionalServiceController implements Initializable {
                 if (!Validate.isCost(cost)) {
                     Utils.alertBox("Cost entered incorrectly\n" +
                             """
-                            Example:\s
-                            100\s
-                            0.99\s
-                            1234567890
-                            """, null, "Error");
+                                    Example:\s
+                                    100\s
+                                    0.99\s
+                                    1234567890
+                                    """, null, "Error");
                     return;
                 }
                 String description = descriptionTA.getText();

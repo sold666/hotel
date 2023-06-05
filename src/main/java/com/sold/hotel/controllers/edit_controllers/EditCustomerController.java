@@ -61,7 +61,7 @@ public class EditCustomerController implements Initializable {
                     return;
                 }
                 Date date = Date.valueOf(birthdate.getValue());
-                if (!Validate.isCorrectDate(date)) {
+                if (!Validate.isCorrectDate(date.toLocalDate())) {
                     Utils.alertBox("Date incorrectly", null, "Error");
                     return;
                 }
@@ -74,9 +74,9 @@ public class EditCustomerController implements Initializable {
                 if (!Validate.isPassport(passport)) {
                     Utils.alertBox("Passport entered incorrectly\n" +
                             """
-                               Enter only passport series and number (10 numbers)\s
-                               Example: 7417932322
-                            """, null, "Error");
+                                       Enter only passport series and number (10 numbers)\s
+                                       Example: 7417932322
+                                    """, null, "Error");
                     return;
                 }
                 preparedStatement = connection.prepareStatement("SELECT id_customer FROM customers WHERE customers.id_user LIKE ?");

@@ -79,7 +79,7 @@ public class SignUpClientController implements Initializable {
                     return;
                 }
                 Date date = Date.valueOf(birthdate.getValue());
-                if (!Validate.isCorrectDate(date)) {
+                if (!Validate.isCorrectDate(date.toLocalDate())) {
                     Utils.alertBox("Date incorrectly", null, "Error");
                     return;
                 }
@@ -92,19 +92,19 @@ public class SignUpClientController implements Initializable {
                 if (!Validate.isPassport(passport)) {
                     Utils.alertBox("Passport entered incorrectly\n" +
                             """
-                               Enter only passport series and number (10 numbers)\s
-                               Example: 7417932322
-                            """, null, "Error");
+                                       Enter only passport series and number (10 numbers)\s
+                                       Example: 7417932322
+                                    """, null, "Error");
                     return;
                 }
                 String status = statusTF.getText();
                 if (!Validate.isStatus(status)) {
                     Utils.alertBox("Status entered incorrectly\n" +
                             """
-                               Enter only 1 or 0:\s
-                               1 - active\s
-                               0 - non active
-                            """, null, "Error");
+                                       Enter only 1 or 0:\s
+                                       1 - active\s
+                                       0 - non active
+                                    """, null, "Error");
                     return;
                 }
 

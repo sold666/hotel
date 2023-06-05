@@ -1,6 +1,7 @@
 package com.sold.hotel.utils;
 
 import java.sql.Date;
+import java.time.LocalDate;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -82,12 +83,12 @@ public class Validate {
         return matcher.find();
     }
 
-    public static boolean isCorrectDate(Date date) {
-        Date current = new Date(System.currentTimeMillis());
-        return date.before(current);
+    public static boolean isCorrectDate(LocalDate date) {
+        LocalDate currentDate = LocalDate.now();
+        return date.isBefore(currentDate);
     }
 
-    public static boolean isDateMoreDate(Date firstDate, Date secondDate) {
-        return firstDate.before(secondDate);
+    public static boolean isDateMoreDate(LocalDate firstDate, LocalDate secondDate) {
+        return firstDate.isBefore(secondDate);
     }
 }

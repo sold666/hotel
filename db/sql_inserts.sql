@@ -28,10 +28,10 @@ INSERT INTO booking(id_customer, check_in, check_out, id_room, total) VALUES
 GO
 
 INSERT INTO services(service_name, cost, description) VALUES 
-	('������', 1000, '�������� ���������� ����� ��������� � ������� ��� �����.'),
-	('���', 2000, '�� ������ ��������������� �������� ���� � ���� � ������.'),
-	('���', 500, '����������� ���.'),
-	('����', 500, '����������� ����.');
+	('Snacks', 1000, 'We will bring snacks to the room'),
+	('Bar', 2000, 'We will bring alcohol to the room'),
+	('Teapot', 500, 'We will bring taste tea to the room'),
+	('Cleaning', 500, 'Clean room');
 GO
 
 INSERT INTO service_util(id_booking, id_service, cost) VALUES 
@@ -68,9 +68,9 @@ INSERT INTO staff(id_user, name, surname, patronymic, date_of_birth, phone, post
 GO
 
 INSERT INTO classification_rooms(classification_name) VALUES 
-	('����'),
-	('������'),
-	('��� �����');
+	('Luxury'),
+	('Economy'),
+	('For two');
 GO
 
 INSERT INTO rooms(id_classification, cost, number_of_seats) VALUES 

@@ -42,10 +42,10 @@ public class ChangeStatusCustomerController implements Initializable {
                 if (!Validate.isStatus(status)) {
                     Utils.alertBox("Status entered incorrectly\n" +
                             """
-                               Enter only 1 or 0:\s
-                               1 - active\s
-                               0 - non active
-                            """, null, "Error");
+                                       Enter only 1 or 0:\s
+                                       1 - active\s
+                                       0 - non active
+                                    """, null, "Error");
                     return;
                 }
                 preparedStatement = connection.prepareStatement("SELECT id_user FROM users WHERE users.login LIKE ?");
